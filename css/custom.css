@@ -1,0 +1,624 @@
+/*--------------------------------------------------------------
+# Selection
+--------------------------------------------------------------*/
+
+::selection {
+  background: #323A45;
+  color: white; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #323A45;
+  color: white; /* Gecko Browsers */
+}
+
+/*--------------------------------------------------------------
+# General + Header
+--------------------------------------------------------------*/
+
+body {
+	opacity:0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s; /* Safari */
+	background: #e8e0e1;
+	font-family: 'Open Sans', sans-serif;
+	color: #889198;
+}
+
+body.contact-bg {
+	background: #21262d;
+	line-height: 2;
+}
+
+h1 {
+	font-size: 2em;
+  letter-spacing: normal;
+  color: #333c4e;
+  text-transform: uppercase;
+}
+
+h1.special {
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-weight: 900;
+	letter-spacing: 3px;
+}
+
+h1.title {
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 3em;
+}
+
+h1.contact-title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 3em;
+	font-weight: 900;
+	color: white;
+	letter-spacing: 3px;
+	padding-top: 1.5em;
+}
+
+@media only screen (max-width: 773px) {
+	h1.contact-title {
+		padding-top: 2.5em;
+	}
+}
+
+@media only screen (max-width: 460px) {
+	h1.contact-title {
+		padding-top: 1em;
+	}
+}
+
+h2 {
+	font-size: 1.4em;
+	color: white;
+	letter-spacing: 2px;
+}
+
+h3 {
+	color: white;
+	font-size: 1.3em;
+}
+
+h4 {
+	font-family: 'Inconsolata', monospace;
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
+	color: #333;
+	font-size: 1.1em;
+}
+
+a {
+	color: #f06373;
+}
+
+a:hover, a:active, a:focus {
+	color: #f06373;
+	text-decoration: none;
+}
+
+.email:hover, .email:focus, .email:active {
+	text-decoration: none;
+	color:white;
+	border: 1px solid white;
+	padding:0.4em;
+}
+
+.icon {
+	color: white;
+	padding: 0.6em;
+}
+
+@media screen and (max-width: 372px){
+	.icon{
+		padding: 0.2em;
+	}
+}
+
+.icon:hover {
+	color: #f06373;
+	text-decoration: none;
+}
+
+.fa-map-marker {
+	color: #f06373;
+}
+
+span.highlight {
+	color: #f06373;
+}
+
+p {
+	padding-top: 1em;
+	font-size: 16px;
+	color: #333;
+	line-height: 1.8;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.project-filter {
+	width: 100%;
+	height: auto;
+	/*0px 3px 11px 0px rgba(0,0,0,0.2)*/
+/*	-moz-box-shadow: 0px 3px 21px 0px rgb(100,100,100);
+	-webkit-box-shadow: 0px 3px 21px 0px rgb(100,100,100);
+	box-shadow: 0px 3px 21px 0px rgb(100,100,100);*/
+	-moz-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.2);
+	border: 1rem solid #fff;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+img.sketch {
+	width: 30%;
+	height: auto;
+}
+
+img.sketch-2 {
+	width: 60%;
+	height: auto;
+}
+
+.col-md-6 {
+	padding: 3em;
+}
+
+@media screen and (max-width: 500px){
+	.col-md-6 {
+		padding: 1.8em;
+	}
+
+	h1.contact-title {
+		padding-top: 2em;
+		font-size: 2.8em;
+	}
+
+	h1.title {
+		font-size: 2.3em;
+	}
+}
+
+.jumbotron {
+	margin-bottom: 4.5em;
+	background-color: #323A45;
+	height: 570px;
+	width: 100%;
+	-webkit-box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  -moz-box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+}
+
+.compass-header {
+	background-image: url(../img/compass/header.png);
+	height: 570px;
+	width: 100%;
+	-webkit-box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  -moz-box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  background-repeat:no-repeat !important;
+	-webkit-background-size:cover !important;
+	-moz-background-size:cover !important;
+	-o-background-size:cover !important;
+	background-size:cover !important;
+	background-position:center !important;
+}
+
+.food-header {
+	background-image: url(../img/food-explorer/header.png);
+	height: 570px;
+	width: 100%;
+	-webkit-box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  -moz-box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  background-repeat:no-repeat !important;
+	-webkit-background-size:cover !important;
+	-moz-background-size:cover !important;
+	-o-background-size:cover !important;
+	background-size:cover !important;
+	background-position:center !important;
+}
+
+.dread-header {
+	background-image: url(../img/dreadquarters/header.png);
+	height: 570px;
+	width: 100%;
+	-webkit-box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  -moz-box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  background-repeat:no-repeat !important;
+	-webkit-background-size:cover !important;
+	-moz-background-size:cover !important;
+	-o-background-size:cover !important;
+	background-size:cover !important;
+	background-position:center !important;
+}
+
+.portfolio-header {
+	background-image: url(../img/portfolio/header.png);
+	height: 570px;
+	width: 100%;
+	-webkit-box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  -moz-box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  box-shadow: 0 5px 7px 0 rgba(0,0,0,.29);
+  background-repeat:no-repeat !important;
+	-webkit-background-size:cover !important;
+	-moz-background-size:cover !important;
+	-o-background-size:cover !important;
+	background-size:cover !important;
+	background-position:center !important;
+}
+
+@media screen and (max-width:460px){
+	.food-header, .compass-header, .dread-header, .portfolio-header {
+		height: 330px;
+	}
+}
+.hero-filter {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+.col-md-8, .col-md-4 {
+	padding: 2em;
+}
+
+.jumbotron p {
+	color: black;
+	font-size: 26px;
+}
+
+.header-container {
+	padding-top: 4.345em;
+}
+
+@media screen and (max-width: 772px) {
+	.header-container {
+		padding-top: 13em;
+	}
+
+	h1.special {
+		font-size: 2.89em;
+	}
+}
+
+.container-fluid {
+	padding: 3em;
+	margin: 0 auto;
+	margin-top: 4em;
+}
+
+
+p.text {
+	padding-top: 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.3em;
+  color: #333;
+  display: inline;
+  line-height: 1.3;
+}
+
+hr {
+	 border: none;
+   border-bottom: 1px solid #c2c1c1;
+   margin: 40px auto;
+   width: 75%;
+}
+
+hr.contact-line {
+	 border: none;
+   border-bottom: 1px solid #c2c1c1;
+   margin: 30px auto;
+   width: 52%;
+}
+
+.about-container {
+	width: 68%;
+	height: auto;
+	padding: 5em;
+}
+
+@media screen and (max-width: 960px) {
+	.about-container {
+    padding: 0;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+		h1.title {
+		text-align: left;
+		padding-top: 1em;
+	}
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.btn {
+	text-transform: uppercase;
+}
+
+.btn-primary {
+	background-color:#f06373;
+	border: 1px solid #f06373;
+	margin-top: 1em;
+	width: 160px;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+	background-color: #f42156;
+	border: 1px solid #f42156;
+	outline: none;
+}
+
+.btn-default {
+	margin-top: 1em;
+	border: 1px solid #f06373;
+	color: #f06373;
+	width: 160px;
+}
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+	border: 1px solid #323A45;
+	color: white;
+	background-color: #323A45;
+	outline: none;
+}
+
+div#topcontrol {
+	  position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 1;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+.about-nav a {
+	color: #333;
+	font-weight: bold;
+}
+
+.about-nav a:hover {
+	color: #333;
+	font-weight: bold;
+}
+
+nav {
+	padding-top: 3.3em;
+}
+
+nav a {
+	font-size: 1.3em;
+  letter-spacing: .075em;
+  font-weight: bold;
+  color: #eee;
+  text-transform: uppercase;
+  font-family: 'open sans', sans-serif;
+}
+
+nav ul {
+	float:right;
+}
+
+nav li {
+	list-style-type: none;
+	float: left;
+	padding: 2em;
+}
+
+nav a:hover {
+	color:#eee;
+ 	border-bottom: 4px solid #F06373;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 772px) {
+
+nav {
+	padding: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #ddd;
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0px -3px 6px rgba(0,0,0,0.16),0px -3px 6px rgba(0,0,0,0.23);
+}
+ 
+nav ul, 
+nav li {
+  display: inline-block;
+  float: none;
+  padding: 1em 4em;
+}
+
+nav li:last-child {
+	padding-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 1em;
+	
+}
+ 
+nav a:hover, nav a:focus, nav a:active {
+	color: #333;
+}
+
+nav ul {
+  padding:0;
+}   
+}
+
+
+@media screen and (max-width: 800px){
+	h2{
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 588px){
+	nav ul, 
+	nav li {
+  display: inline-block;
+  float: none;
+  padding: 1em 3em;
+}
+
+nav ul {
+  padding:0;
+}
+
+nav a:hover, nav a:focus, nav a:active {
+	color: #333;
+	text-decoration: none;
+}
+
+div#topcontrol {
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 525px) {
+nav ul, 
+nav li {
+  display: inline-block;
+  float: none;
+  padding: 1em 2.4em;
+}
+
+nav ul {
+  padding:0;
+}   
+}
+
+@media screen and (max-width: 470px) {
+nav ul, 
+nav li {
+  display: inline-block;
+  float: none;
+  padding: 1em 2em;
+}
+nav ul {
+  padding:0;
+}
+
+}
+
+@media screen and (max-width: 401px) {
+nav ul, 
+nav li {
+  display: inline-block;
+  float: none;
+  padding: 1em 1.6em;
+}
+nav ul {
+  padding:0;
+}   
+
+}
+
+@media screen and (max-width: 378px) {
+nav ul, 
+nav li {
+  display: inline-block;
+  float: none;
+  padding: 1em 2em;
+}
+nav ul {
+  padding:0;
+}   
+}
+
+@media screen and (max-width: 353px) {
+nav ul, 
+nav li {
+  display: inline-block;
+  float: none;
+  padding: 1em 1.7em;
+}
+nav ul {
+  padding:0;
+}   
+
+
+}
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	font-weight: bold;
+	clip: auto !important;
+	color: black;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+  background-color: #21262d;
+}
+
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 1em;
+}
+
+.fa-heart {
+	color: #f06373;
+}

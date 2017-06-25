@@ -1,0 +1,186 @@
+// Media stuff 
+	// Tablet portrait 480px, mobile portrait 320px
+
+	//Desktop 940 px
+	@media only screen and (max-width: 960px) {
+		main {
+			width: 96%;
+			margin: 3% auto;
+		}
+		
+		.inner-header {
+			width: 96%;
+			margin: 0 auto;
+		}
+
+
+	}
+	@media only screen and (max-width: 740px) {
+		
+
+		.sidebar-container {
+			display: none;
+		}
+
+		.main-container {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		footer {
+			display:block;
+			padding:15px;
+		}
+
+		.navbar {
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+
+			.navbar ul {
+				width: 100%;
+			}
+
+			.navbar form {
+				display: none;
+			}
+			
+			.inner-header form {
+				display: block;
+			}
+
+			.searchbar {
+				border-radius: 5px;
+			}
+	}
+
+	@media only screen and (min-width: 621px) {
+
+		.inner-navbar {
+			width: 96%;
+			margin: 0 auto;
+		}
+
+		.inner-navbar .social-media {
+			display: none;
+		}
+	} 
+
+	@media only screen and (max-width: 620px) {
+		.social-media {
+			display: none;
+		}
+
+		.inner-header form {
+			display: none;
+		}
+
+		.ham {
+		display: block;
+		margin-top: 2%;
+		}
+
+		.navbar ul {
+		flex-direction: column;
+		}
+
+		.navbar li {
+    	flex: 0;
+		}
+
+		.navbar {
+			height: 0;
+			overflow: hidden;
+			transition: height 0.3s ease;
+		}
+
+		.navbar.open {
+			height: 279px;
+		}
+
+		.inner-navbar {
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.inner-navbar li {
+			border-bottom: 1px solid $darkblue;
+		}
+
+		.navbar form {
+			display: flex;
+			flex-direction: column;
+			order: -1;
+			width: 100%;
+		}
+
+		.searchbar {
+			border-radius: 0;
+			border-top: 1px solid $darkblue;
+			border-bottom: 1px solid $darkblue;
+		}
+
+		
+		.inner-navbar .social-media {
+		  flex-direction: row;	
+			width: 100%;
+			justify-content: center;
+			background-color: white;
+			border-bottom: 1px solid $darkblue;
+			height: 32px;
+
+		}
+
+		.navbar .social-media li {
+			background-color: white;		
+
+		}
+	}
+
+	// mobile landscape 524px
+	@media only screen and (max-width: 524px) {
+
+		.nav{
+		height: 0px;
+		}
+
+	.social-media {
+		display: none;
+	}
+
+	.sidebar-container {
+		display: none; 
+	}
+
+	}
+
+	@media only screen and (max-width: 400px) {
+
+		.bottom-image-01,
+		.bottom-image-02 {
+			margin-right: 0;
+			margin-left: 0;
+			width: 100%;
+		}
+
+		.bottom-image-01 {
+			margin-bottom: 2px;
+		}
+			
+	.foodlogo {
+		display: none;
+	}
+
+	.inner-header {
+		background-image: url(../images/small_logo.jpg);
+		background-repeat: no-repeat;
+		background-position: 10px 9px;
+		height: 55px;
+	}
+	 
+	 .ham {
+	 	margin: 0;
+	 }
+	}
+

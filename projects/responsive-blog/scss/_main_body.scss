@@ -1,0 +1,158 @@
+// Main body
+	main,
+	.inner-header,
+	.inner-navbar {
+		max-width: 940px;
+		margin: 0 auto;
+	}
+
+	main {
+		display: flex;
+		margin-top: 1%;
+	}
+
+	.main-container {
+		width: 75%;
+	}
+
+	//Side bar
+
+	.sidebar-01, .sidebar-02 {
+		background-color: white;
+		margin-bottom: 6%;
+	}
+
+	.sidebar-container {
+		margin-left: 2%;
+		width: 23%;
+	}
+
+	.inner-sidebar-01 {
+		font: 100% $font-bold;
+
+		img {
+			border: 1px solid $lightblue;
+			margin-right: 2%;
+		}
+	}
+
+	.sidebox {
+		display: flex;
+		padding: 4%;
+	}
+
+	.sidebox:nth-child(2n) {
+		background-color: $lightgray;
+	}
+
+	.sidebox p {
+		align-self: center;
+	}
+
+	.sidebar-02 ul {
+		padding: 4% 6%;
+		line-height: 1.6;
+	}
+	.sidebar-02 li a {
+		font: 100% $font-bold;
+		text-decoration: none;
+		color: black;
+	}
+
+	.top-image:hover, .bottom-image-01:hover, .bottom-image-02:hover {
+		opacity: 0.8;
+	}
+
+	.article-02, .article-03 {
+		background-color: white;
+		margin-top: 2%;
+		padding: 2%;
+
+		h4 {
+			padding-bottom: 3%;
+		}
+		
+		img {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+		}
+		p {
+			color: #333;
+			font: 100% $font-light;
+			line-height: 1.5;
+			padding-top: 2%;
+		}
+	}
+
+	.read-more {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		padding-top: 2%;
+	}
+
+	.read-more a {
+		background-color: $lightblue;
+		font: 100% $font-bold;
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+		padding: 2px 6px;
+	}
+
+	.hero{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.hero img {
+		display: block;
+		width: 100%;
+	}
+
+	.hero h2 {
+		background-color: rgba(0,0,0,0.6);
+		color: white;
+		padding: 4px 6px;
+		font: 120% $font-bold;
+		position: absolute;
+		bottom: 0;	
+		width: 100%;
+	}
+
+	.hero a {
+		position: relative;
+		text-decoration: none;
+		display: block;
+	}
+
+	.top-image {
+		width: 100%;
+		margin-bottom: 4px;
+	}
+
+	.bottom-image-01,
+	.bottom-image-02 {
+		width: calc((100% /2) - 2px);
+	}
+
+	.bottom-image-01 {
+		margin-right: 2px;
+	}
+
+	.bottom-image-02 {
+		margin-left: 2px;
+	}
+
+	.posts {
+	background: url(../images/previous_btn.png);
+  width: 187px;
+  height: 21px;
+  text-indent: 100%;
+  white-space: nowrap;
+  margin: 40px 0 35px 0;
+  display: block;
+  cursor: pointer;
+  }
